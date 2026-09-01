@@ -1,0 +1,82 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="1200" height="280" rx="28" ry="28" />
+    </clipPath>
+
+    <filter id="blob-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="70" />
+    </filter>
+
+    <filter id="text-glow" x="-30%" y="-100%" width="160%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="blobPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blobCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blobPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="border" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="shimmerText" x1="-300" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c7d2fe" />
+      <stop offset="42%" stop-color="#c7d2fe" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="58%" stop-color="#c7d2fe" />
+      <stop offset="100%" stop-color="#c7d2fe" />
+      <animate attributeName="x1" values="-300;1500;-300" dur="4.5s" repeatCount="indefinite" calcMode="linear" />
+      <animate attributeName="x2" values="0;1800;0" dur="4.5s" repeatCount="indefinite" calcMode="linear" />
+    </linearGradient>
+
+    <linearGradient id="underline" x1="-200" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.55" />
+      <stop offset="45%" stop-color="#7c3aed" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="1" />
+      <stop offset="55%" stop-color="#7c3aed" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.55" />
+      <animate attributeName="x1" values="-200;600;-200" dur="3s" repeatCount="indefinite" calcMode="linear" />
+      <animate attributeName="x2" values="0;800;0" dur="3s" repeatCount="indefinite" calcMode="linear" />
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect x="0" y="0" width="1200" height="280" fill="#05060b" />
+
+    <ellipse cx="150" cy="60" rx="220" ry="150" fill="url(#blobPurple)" filter="url(#blob-blur)" transform="translate(0,0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 45,25; -20,15; 0,0" dur="17s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="1060" cy="230" rx="260" ry="160" fill="url(#blobCyan)" filter="url(#blob-blur)" transform="translate(0,0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -35,-20; 20,10; 0,0" dur="21s" repeatCount="indefinite" begin="-4s" />
+    </ellipse>
+    <ellipse cx="620" cy="270" rx="320" ry="120" fill="url(#blobPink)" filter="url(#blob-blur)" transform="translate(0,0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 30,-15; -30,10; 0,0" dur="25s" repeatCount="indefinite" begin="-9s" />
+    </ellipse>
+
+    <rect x="0.75" y="0.75" width="1198.5" height="278.5" rx="27" ry="27" fill="none" stroke="url(#border)" stroke-width="1.5" />
+
+    <text x="600" y="88" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="5" fill="#22d3ee">WELCOME TO MY PROFILE</text>
+
+    <text x="600" y="158" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="56" font-weight="800" fill="url(#shimmerText)" filter="url(#text-glow)">I'm James Opondo 👋</text>
+
+    <text x="600" y="202" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="400" fill="#94a3b8">Software Engineer · AI / ML · Full-Stack &amp; Mobile Developer</text>
+
+    <rect x="400" y="225" width="400" height="3" rx="1.5" fill="url(#underline)" />
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:7c3aed,100:06b6d4&height=220&section=header&text=Hi%20There!%20I'm%20James%20%F0%9F%91%8B&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%7C%20AI%20%2F%20ML%20%7C%20Full-Stack%20%2B%20Mobile&descAlignY=58&descSize=18&animation=fadeIn" />
+<img width="100%" src="assets/header.svg" alt="header" />
 
 <a href="https://github.com/hamezksm">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&width=650&lines=Building+scalable+systems+%26+AI+products;Software+Architecture+%C2%B7+APIs+%C2%B7+DevOps;Currently+shipping+CropCare+AI+%F0%9F%8C%B1;Turning+ideas+into+real-world+systems" alt="Typing SVG" />
@@ -27,14 +27,14 @@ I'm a **software engineer and product builder** focused on **AI, Machine Learnin
 
 Right now I'm building things aimed at **making the world a better place** — including **[CropCare AI](https://github.com/hamezksm/cropcare-ai)** 🌱, an AI-powered platform that helps farmers identify crop diseases and make better decisions in the field.
 
-- 🔭 Currently building **CropCare AI** — computer vision for crop disease detection
+- <img src="assets/pulse.svg" width="14" align="absmiddle" /> Currently building **CropCare AI** — computer vision for crop disease detection
 - 🧠 Deep interest in **AI/ML applied to real-world, high-impact problems**
 - 🏗️ Focused on **system architecture, API design, and production-grade DevOps**
 - 📱 Building across the stack — **web, backend, and mobile**
 - 🌍 Mission: turn complex problems into practical, well-designed products — from idea to real system
 - 💬 Ask me about **system design, ML pipelines, or shipping 0→1 products**
 
-<br/>
+<div align="center"><img src="assets/divider.svg" width="100%" height="4" alt="" /></div>
 
 ## 🛠️ Tech Stack
 
@@ -63,7 +63,7 @@ Right now I'm building things aimed at **making the world a better place** — i
 
 </div>
 
-<br/>
+<div align="center"><img src="assets/divider.svg" width="100%" height="4" alt="" /></div>
 
 ## 🌱 Featured Project
 
@@ -75,11 +75,11 @@ Right now I'm building things aimed at **making the world a better place** — i
 
 **AI-powered crop disease detection & decision support for farmers**
 <br/>
-<sub>Computer vision · ML inference pipeline · Mobile-first field tool</sub>
+<sub>Computer vision · ML inference pipeline · Mobile-first field tool · <img src="assets/pulse.svg" width="12" align="absmiddle" /> Actively in development</sub>
 
 </div>
 
-<br/>
+<div align="center"><img src="assets/divider.svg" width="100%" height="4" alt="" /></div>
 
 ## 📊 GitHub Stats
 
